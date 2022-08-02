@@ -1,20 +1,19 @@
 @import "../colors.scss";
 
-:root {
+.about {
   --font-color: #333;
-  --background-color: yellow;
+  --background-color: #{$fortna-alert-01};
   --link-color: green;
 }
 
-/* 2 */
-[data-theme="dark"] {
+[data-theme="dark"] .about {
   --font-color: #eee;
-  --background-color: violet;
+  --background-color: #{$fortna-health-01};
   --link-color: grey;
 }
 
-/* 3 */
 .about {
+
   background-color: var(--background-color);
   color: var(--font-color);
   height: 100vh;
