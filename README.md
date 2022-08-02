@@ -10,7 +10,7 @@ sẽ bị ghi đè color với nhau, nó sẽ chỉ ăn color ở màn cuối c�
 
 Reference: 
 
-```
+
 [https://www.thisdot.co/blog/how-to-implement-a-dark-to-light-mode-feature-in-your-react-sass-project](https://www.thisdot.co/blog/how-to-implement-a-dark-to-light-mode-feature-in-your-react-sass-project)
 [https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/](https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/)
 [https://github.com/Glacian22/Easy-React-Theming/blob/master/src/index.css](https://github.com/Glacian22/Easy-React-Theming/blob/master/src/index.css)
@@ -28,4 +28,3 @@ key search: integrate darkmode reactjs or theming reactjs
 Note: Cái prefers-color-scheme: dark chỉ có tác dụng xác định dark hay light ở hệ thống, 
 ý tưởng là dựa vào đó để toggle set class dark hay light vào thẻ dom, 
 chứ prefers-color-scheme không có tác dụng switch theme giúp
-```
