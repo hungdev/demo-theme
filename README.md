@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+```
+Bài toán đưa ra là chỉ có 1 file color, file color này không có dark và light type, và các màn này sử dụng file color này,
+không có cặp đối xứng ví dụ như chế độ dark là blue-color: blue-color-dark, và light là blue-color: blue-color-light.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Để xử lý case này cần define cho mỗi màn các màu, và ko được define cho global color vì nếu define cho global color khi build
+sẽ bị ghi đè color với nhau, nó sẽ chỉ ăn color ở màn cuối cùng.
 
-## Available Scripts
+```
+Reference: 
 
-In the project directory, you can run:
+```
+[https://www.thisdot.co/blog/how-to-implement-a-dark-to-light-mode-feature-in-your-react-sass-project](https://www.thisdot.co/blog/how-to-implement-a-dark-to-light-mode-feature-in-your-react-sass-project)
+[https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/](https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/)
+[https://github.com/Glacian22/Easy-React-Theming/blob/master/src/index.css](https://github.com/Glacian22/Easy-React-Theming/blob/master/src/index.css)
+[https://dev.to/alexeagleson/how-to-create-a-dark-mode-component-in-react-3ibg](https://dev.to/alexeagleson/how-to-create-a-dark-mode-component-in-react-3ibg)
+[https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616](https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616)
 
-### `npm start`
+[https://blog.bitsrc.io/3-ways-to-theme-react-components-9cfa631351e9](https://blog.bitsrc.io/3-ways-to-theme-react-components-9cfa631351e9)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#aa-using-a-body-class](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#aa-using-a-body-class)
 
-### `npm test`
+key search: integrate darkmode reactjs or theming reactjs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note: Cái prefers-color-scheme: dark chỉ có tác dụng xác định dark hay light ở hệ thống, 
+ý tưởng là dựa vào đó để toggle set class dark hay light vào thẻ dom, 
+chứ prefers-color-scheme không có tác dụng switch theme giúp
+```
