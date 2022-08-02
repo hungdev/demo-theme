@@ -12,9 +12,13 @@ Reference:
 
 
 [https://www.thisdot.co/blog/how-to-implement-a-dark-to-light-mode-feature-in-your-react-sass-project](https://www.thisdot.co/blog/how-to-implement-a-dark-to-light-mode-feature-in-your-react-sass-project)
+
 [https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/](https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/)
+
 [https://github.com/Glacian22/Easy-React-Theming/blob/master/src/index.css](https://github.com/Glacian22/Easy-React-Theming/blob/master/src/index.css)
+
 [https://dev.to/alexeagleson/how-to-create-a-dark-mode-component-in-react-3ibg](https://dev.to/alexeagleson/how-to-create-a-dark-mode-component-in-react-3ibg)
+
 [https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616](https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616)
 
 [https://blog.bitsrc.io/3-ways-to-theme-react-components-9cfa631351e9](https://blog.bitsrc.io/3-ways-to-theme-react-components-9cfa631351e9)
