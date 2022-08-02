@@ -1,0 +1,21 @@
+@import "../colors.scss";
+
+:root {
+  --font-color: #333;
+  --background-color: yellow;
+  --link-color: green;
+}
+
+/* 2 */
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: violet;
+  --link-color: grey;
+}
+
+/* 3 */
+.about {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  height: 100vh;
+}

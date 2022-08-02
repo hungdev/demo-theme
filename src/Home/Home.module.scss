@@ -1,0 +1,26 @@
+@import "../colors.scss";
+
+:root {
+  --font-color: #333;
+  --background-color: white;
+  --link-color: cornflowerblue;
+}
+
+/* 2 */
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: blue;
+  --link-color: lightblue;
+}
+
+/* 3 */
+.home {
+
+  background-color: var(--background-color);
+  color: var(--font-color);
+  height: 100vh;
+
+  a {
+    color: var(--link-color);
+  }
+}
