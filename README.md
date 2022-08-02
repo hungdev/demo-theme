@@ -1,3 +1,6 @@
+### Demo theme Dark Mode - ReactJs
+
+
 ```
 Bài toán đưa ra là chỉ có 1 file color, file color này không có dark và light type, và các màn này sử dụng file color này,
 không có cặp đối xứng ví dụ như chế độ dark là blue-color: blue-color-dark, và light là blue-color: blue-color-light.
